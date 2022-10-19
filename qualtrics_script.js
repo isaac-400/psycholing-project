@@ -2,11 +2,16 @@ const delay = (t) => {
     return new Promise(res => setTimeout(res, t))
 }
 
+
 function trigger_stimulus() {
+    fetch("https://raw.githubusercontent.com/isaac-400/psycholing-project/main/test.json").then((response) =>{ response.text().then((r) => {go_stimulus(JSON.parse(r));}); });
+}
+
+function go_stimulus(stimulus) {
 	
     const target_area = document.getElementById("show");
     const fixation_target = "+";
-    const stimulus = {"delay":500,"words":{"one":"random","two":"random","three":"random","four":"random","five":"random"}}
+    
 
     words = Object.keys(stimulus.words);
     console.log(words);
