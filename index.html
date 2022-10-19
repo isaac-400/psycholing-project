@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Psycholing Experiment</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
+  </head>
+  </body>
+</html>
+
+
+  <body>
+    <div id="show">+</div></br>
+    <button onclick="trigger_stimulus(); this.setAttribute('disabled', 'disabled')">Ready?</button>
+
+    <hr>
+    <p> Stimulus Creation Helper </p>
+    <textarea id="stimulus-input" name="stimulus input" rows="20" cols="70">
+      {
+      "delay": 500,
+      "words": {
+      "hello": "red",
+      "this": "blue",
+      "is": "purple",
+      "a": "green",
+      "test": "orange"
+      }
+      }</textarea>
+     <textarea id="csv-text" name="csv input" rows="20" cols="70"></textarea>
+    <button onclick="convert_csv_text_area()">convert</button>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

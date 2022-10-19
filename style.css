@@ -1,0 +1,29 @@
+html {
+  
+  padding: 2rem;
+  margin: auto;
+  text-align: center;
+  font-size: 16pt;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 3em 0 1em;
+}
+p,ul,ol {
+  margin-bottom: 2em;
+  color: #1d1d1d;
+  font-family: sans-serif;
+}
+
+
+#show {
+    padding: 1rem;
+    border-style: solid;
+    border-color: black;
+    width: 30%;
+    margin: auto;
+    font-size: 3rem;
+}
+button {
+    padding: 1em;
+    
+}
